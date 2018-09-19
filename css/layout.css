@@ -1376,6 +1376,18 @@ input:-moz-placeholder {
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
 	position: relative;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	opacity: 0;
+}
+.b-9-list li.active {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
 }
 .b-9-list li:hover {
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.19);
