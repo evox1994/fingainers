@@ -41,6 +41,17 @@ $(document).ready(function(){
 	}
 	filter();
 
+	function filterMore() {
+		setTimeout(function(){
+			if ( $('.b-9-list').find('li.active').length > 6 ) {
+				$('.b-9 .more-btn').css('display','inline-block');
+			} else {
+				$('.b-9 .more-btn').css('display','none');
+			}
+		},300);
+	}
+	filterMore();
+
 	$('.filter li').click(function(){
 		if ( $(this).hasClass('active') ) {
 			$(this).removeClass('active');
@@ -49,6 +60,7 @@ $(document).ready(function(){
 			$(this).addClass('active');
 		}
 		filter();
+		filterMore();
 	});
 
 	$('.reviews-slider').slick();
@@ -77,6 +89,18 @@ $(document).ready(function(){
 		$(this).closest('.header').find('.mobile-btn').removeClass('active');
 		$(this).closest('.mobile-menu').removeClass('active');
 		$('body').removeClass('active');
+	});
+
+	$('.header-nav a').click(function(){
+		var block = $(this).attr('href');
+		var des = $(block).offset().top - 50;
+
+		if ( $(window).width() < 768 ) {
+			$('.mobile-btn').removeClass('active');
+			$('.mobile-menu').removeClass('active');
+		}
+		$('body,html').animate({scrollTop: des}, 800);
+		return false;
 	});
 
 	$(window).scroll(function(){
