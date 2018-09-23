@@ -862,7 +862,6 @@ input:-moz-placeholder {
 	display: inline-block;
 	color: #ffffff;
 	padding: 17px 30px;
-	border: 1px solid rgb(26, 48, 102);
 	background-color: rgb(49, 147, 230);
 	border-radius: 5px;
 	font-family: 'MuseoSansCyrl-500';
@@ -873,7 +872,7 @@ input:-moz-placeholder {
 	transition: all 0.3s;
 }
 .b-4-list .li-bottom .li-btn:hover {
-	background-color: rgb(26, 48, 102);
+	background-color: #126ebc;
 }
 
 .b-5 {
@@ -1164,7 +1163,7 @@ input:-moz-placeholder {
 	transition: all 0.3s;
 }
 .b-6-list .li-buttons .li-btn:hover {
-	background-color: rgb(26, 48, 102);
+	background-color: #126ebc;
 }
 .b-6-list .li-buttons .btn-text {
 	margin-top: 19px;
@@ -1419,7 +1418,7 @@ input:-moz-placeholder {
 	transition: all 0.3s;
 }
 .b-8-list .li-buttons .li-btn:hover {
-	background-color: rgb(26, 48, 102);
+	background-color: #126ebc;
 }
 .b-8-list .li-buttons .btn-text {
 	margin-top: 19px;
@@ -1460,7 +1459,7 @@ input:-moz-placeholder {
 	margin: 0 10px 16px;
 	font-family: 'MuseoSansCyrl-700';
 	font-size: 16px;
-	color: #000000;
+	color: #919191;
 }
 .b-9 .filter ul li.active {
 	color: rgb(49, 147, 230);
