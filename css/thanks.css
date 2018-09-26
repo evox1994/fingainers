@@ -1,0 +1,118 @@
+body {
+	padding-top: 32px;
+}
+.page-nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #f5f5f5;
+	z-index: 100;
+	width: 100%;
+}
+.page-nav .b-block {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.page-nav-flex {
+	text-align: center;
+}
+.page-nav-back-wrap {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	text-align: left;
+}
+.page-nav-back {
+	display: inline-block;vertical-align: middle;
+	font-family: 'MuseoSansCyrl-700';
+	font-size: 18px;
+	color: rgb(49, 147, 230);
+	padding-left: 40px;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.page-nav-back:hover {
+	color: #126ebc;
+}
+.page-nav-back::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: calc(50% - 7px);
+	width: 28px;
+	height: 14px;
+	background-image: url('../i/back-arr.png');
+	background-size: contain;
+}
+.page-nav p {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #000000;
+	width: calc(40% - 8px);
+}
+.page-nav-btn-wrap {
+	display: inline-block;
+	vertical-align: middle;
+	width: 30%;
+	text-align: right;
+}
+.page-nav-btn {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px 30px;
+	border-radius: 5px;
+	background-color: rgb(49, 147, 230);
+	color: #ffffff;
+	font-family: 'MuseoSansCyrl-500';
+	font-size: 16px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.page-nav-btn:hover {
+	background-color: #126ebc;
+}
+
+.b-1 .b-block {
+	padding-top: 65px;
+	padding-bottom: 65px;
+	min-height: 100vh;
+}
+.b-1 h2 {
+	display: block;
+	padding-bottom: 25px;
+	font-size: 80px;
+	font-family: 'MuseoSansCyrl-900';
+	color: #000000;
+	position: relative;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+.b-1 h2::before {
+	content: '';
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: calc(50% - 80px);
+	width: 160px;
+	height: 4px;
+	background-color: rgb(49, 147, 230);
+}
+.b-1 p {
+	font-size: 40px;
+	color: rgb(77, 77, 77);
+	line-height: 1.2;
+	margin-bottom: 35px;
+}
+.b-1 img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
