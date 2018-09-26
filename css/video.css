@@ -1,5 +1,5 @@
 body {
-	padding-top: 192px;
+	padding-top: 175px;
 }
 .page-nav {
 	position: absolute;
@@ -17,9 +17,9 @@ body {
 	text-align: center;
 }
 .page-nav-back-wrap {
-	display: inline-block;
+	display: block;
 	vertical-align: middle;
-	width: calc(50% - 2px);
+	width: 100%;
 	text-align: left;
 }
 .page-nav-back {
@@ -135,12 +135,12 @@ body {
 
 @media screen and (max-width: 1280px) {
 	body {
-		padding-top: 174px;
+		padding-top: 157px;
 	}
 }
 @media screen and (max-width: 767px) {
 	body {
-		padding-top: 111px;
+		padding-top: 94px;
 	}
 	.header {
 		position: absolute;
