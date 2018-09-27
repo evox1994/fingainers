@@ -38,6 +38,9 @@ $(document).ready(function(){
 	filterMore();
 
 	function Article(){
+		var page_href = location.href;
+		$('.news-share-block input').val(page_href);
+		$('.popup-article').removeClass('active');
 		if ( location.hash ) {
 			var el = location.hash;
 			$(el).addClass('active');
@@ -75,6 +78,11 @@ $(document).ready(function(){
 	});
 
 	$('.b-9-list .li-btn').click(function(){
+		location.hash = $(this).attr('href');
+		return false;
+	});
+
+	$('.article-nav a').click(function(){
 		location.hash = $(this).attr('href');
 		return false;
 	});

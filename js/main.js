@@ -21,6 +21,7 @@ $(document).ready(function(){
 		} else {
 			$(this).addClass('active');
 		}
+		$(this).removeClass('error');
 	});
 
 	$('.mobile-btn').click(function(){
@@ -58,5 +59,51 @@ $(document).ready(function(){
 	});
 
 	$('input[type="tel"]').inputmask('+7 (999) 999-99-99');
+	$('.fancybox').fancybox();
+
+	$('.popup-background').click(function(){
+		$.fancybox.close();
+	});
+
+	$('input').on('input',function(){
+		$(this).removeClass('error');
+	});
+	$('textarea').on('input',function(){
+		$(this).removeClass('error');
+	});
+
+	$('form button[type="submit"]').click(function(){
+		if ( $(this).closest('form').find('.radio-btn').hasClass('active') ) {
+			$(this).closest('form').find('input').each(function(){
+				if(!$(this).val().length) { 
+					event.preventDefault(); 
+					$(this).addClass("error"); 
+				} else { 
+					$(this).removeClass("error"); 
+				} 
+			});
+			$(this).closest('form').find('textarea').each(function(){
+				if(!$(this).val().length) { 
+					event.preventDefault(); 
+					$(this).addClass("error"); 
+				} else { 
+					$(this).removeClass("error"); 
+				} 
+			});
+		} else {
+			$(this).closest('form').find('.radio-btn').addClass('error');
+			event.preventDefault();
+		}
+	});
+
+	$('.news-share-block').click(function(){
+		var span = $(this).find('span');
+		$(this).find('input').select();
+		document.execCommand('copy');
+		$(this).find('span').text('Готово');
+		setTimeout(function(){
+			span.text('Скопировать');
+		},3000);
+	});
 
 });

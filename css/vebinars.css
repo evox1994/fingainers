@@ -23,7 +23,8 @@ body {
 	text-align: left;
 }
 .page-nav-back {
-	display: inline-block;vertical-align: middle;
+	display: inline-block;
+	vertical-align: middle;
 	font-family: 'MuseoSansCyrl-700';
 	font-size: 18px;
 	color: rgb(49, 147, 230);
