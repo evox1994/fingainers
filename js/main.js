@@ -57,6 +57,7 @@ $(document).ready(function(){
 			$('.mobile-btn').removeClass('active');
 			$('.mobile-menu').removeClass('active');
 		}
+		$('body').removeClass('active');
 		$('body,html').animate({scrollTop: des}, 800);
 		return false;
 	});

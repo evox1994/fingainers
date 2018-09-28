@@ -614,13 +614,13 @@ body {
 		padding-top: 111px;
 	}
 	.page-nav-back-wrap, .page-nav-btn-wrap {
-		width: calc(50% - 2px);
+		width: calc(50% - 4px);
 	}
 	.page-nav p {
 		display: none;
 	}
 	.page-nav-back {
-		font-size: 15px;
+		font-size: 12px;
 	}
 	.header {
 		position: absolute;
