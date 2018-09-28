@@ -2,7 +2,7 @@ body {
 	padding-top: 32px;
 }
 .page-nav {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	background-color: #f5f5f5;

@@ -16,6 +16,7 @@
 	padding-bottom: 26px;
 	position: relative;
 	margin-bottom: 29px;
+	text-align: left;
 }
 .b-1 h1 span {
 	color: rgb(255, 192, 0);
@@ -38,6 +39,7 @@
 	line-height: 1.2;
 	width: 55%;
 	margin-bottom: 27px;
+	text-align: left;
 }
 .b-1-btn {
 	display: inline-block;
@@ -71,37 +73,40 @@
 	padding-top: 45px;
 	padding-bottom: 50px;
 }
-.b-2-left {
-	display: inline-block;
+.b-2-abs{
+	display: block;
 	vertical-align: top;
 	box-sizing: border-box;
 	padding-right: 15px;
-	width: calc(40% - 4px);
+	width: 40%;
 	margin-bottom: 30px;
+	left: 0;
+	top: 0;
+	position: absolute;
+	text-align: center;
 }
-.b-2-left img {
+.b-2-abs img {
 	display: block;
 	max-width: 100%;
 	margin: 30px auto 16px;
 }
-.b-2-left .name {
+.b-2-abs .name {
 	font-size: 17px;
 	color: #000000;
 	line-height: 1.2;
 }
-.b-2-left .name span {
+.b-2-abs .name span {
 	font-family: 'MuseoSansCyrl-500';
 	font-size: 20px;
 }
-.b-2-right {
-	display: inline-block;
-	vertical-align: top;
+.b-2-wrap {
 	box-sizing: border-box;
-	width: calc(60% - 4px);
-	padding-left: 15px;
+	width: 100%;
+	padding-left: calc(40% + 15px);
 	text-align: left;
+	position: relative;
 }
-.b-2-right h2 {
+.b-2-wrap h2 {
 	display: block;
 	font-family: 'MuseoSansCyrl-900';
 	color: #000000;
@@ -110,8 +115,9 @@
 	font-size: 40px;
 	line-height: 1.2;
 	margin-bottom: 29px;
+	text-align: left;
 }
-.b-2-right h2::before {
+.b-2-wrap h2::before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -121,22 +127,24 @@
 	height: 4px;
 	background-color: rgb(49, 147, 230);
 }
-.b-2-right p {
+.b-2-wrap p {
 	display: block;
 	font-size: 16px;
 	color: #000000;
 	line-height: 1.2;
 	margin-bottom: 20px;
+	text-align: left;
 }
-.b-2-right .list-title {
+.b-2-wrap .list-title {
 	display: block;
 	font-family: 'MuseoSansCyrl-700';
 	color: #000000;
 	line-height: 1.2;
 	font-size: 16px;
 	margin-bottom: 20px;
+	text-align: left;
 }
-.b-2-right ul li {
+.b-2-wrap ul li {
 	display: block;
 	box-sizing: border-box;
 	padding-left: 37px;
@@ -146,8 +154,9 @@
 	line-height: 1.2;
 	margin-bottom: 16px;
 	position: relative;
+	text-align: left;
 }
-.b-2-right ul li::before {
+.b-2-wrap ul li::before {
 	content: '';
 	position: absolute;
 	left: 7px;
@@ -1280,26 +1289,32 @@
 	}
 }
 @media screen and (max-width: 767px) {
+	.b-1 {
+		text-align: center;
+	}
 	.b-1 h1 {
 		max-width: 100%;
 	}
 	.b-1 p {
 		max-width: 100%;
 	}
-	.b-2-left {
+	.b-2-abs {
 		display: block;
 		padding-right: 0;
 		width: 100%;
+		position: static;
 	}
-	.b-2-right {
+	.b-2-wrap {
 		display: block;
 		width: 100%;
 		padding-left: 0;
+		text-align: center;
 	}
 	.b-3-list .li-text {
 		display: block;
 		width: 100%;
 		margin-right: auto;
+		text-align: center;
 	}
 	.b-3-list li {
 		position: relative;
@@ -1318,13 +1333,6 @@
 	}
 	.b-4-list .li-bottom {
 		text-align: center;
-	}
-	.b-4-list .li-bottom span {
-		float: none !important;
-		margin-bottom: 20px;
-	}
-	.b-4-list .li-bottom .li-btn {
-		float: none !important;
 	}
 	.reviews-slider .slide-left {
 		max-width: 300px;

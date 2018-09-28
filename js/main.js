@@ -6,11 +6,18 @@ $(document).ready(function(){
 		if ( $(window).width() > 768 ) {
 			if ( st > 162 ) {
 				$('.header').addClass('active');
+				$('.page-nav').addClass('active');
 			} else {
 				$('.header').removeClass('active');
+				$('.page-nav').removeClass('active');
 			}
 		} else {
 			$('.header').removeClass('active');
+			if ( st > 62 ) {
+				$('.page-nav').addClass('active');
+			} else {
+				$('.page-nav').removeClass('active');
+			}
 		}
 	}
 	scrollHeader();
@@ -104,6 +111,14 @@ $(document).ready(function(){
 		setTimeout(function(){
 			span.text('Скопировать');
 		},3000);
+	});
+
+	$('.scroll-btn').click(function(){
+		var block = $(this).attr('href');
+		var des = $(block).offset().top - 50;
+
+		$('body,html').animate({scrollTop: des}, 800);
+		return false;
 	});
 
 });

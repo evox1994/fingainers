@@ -9,6 +9,9 @@ body {
 	z-index: 100;
 	width: 100%;
 }
+.page-nav.active {
+	position: fixed;
+}
 .page-nav .b-block {
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -81,7 +84,7 @@ body {
 }
 
 .header {
-	top: 49px;
+	top: 32px;
 }
 .header.active {
 	position: absolute;
@@ -126,10 +129,13 @@ body {
 }
 .b-1 .video {
 	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
 }
 .b-1 .video iframe {
 	display: block;
-	max-width: 100%;
+	width: 100%;
+	min-height: 405px;
 	margin: 0 auto;
 }
 
@@ -150,5 +156,8 @@ body {
 	}
 	.header .social-list {
 		margin-right: auto;
+	}
+	.b-1 .video iframe {
+		min-height: 300px;
 	}
 }
