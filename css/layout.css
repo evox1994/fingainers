@@ -523,6 +523,7 @@ input:-moz-placeholder {
 	box-sizing: border-box;
 	overflow-y: auto;
 	background-color: #ffffff;
+	-webkit-overflow-scrolling: touch;
 }
 .popup-article.active {
 	display: block;
