@@ -57,9 +57,9 @@ $(document).ready(function(){
 	function articleScroll(){
 		var st = $('.popup-article').scrollTop();
 		if ( st > 60 ) {
-			$('.article-scroll').addClass('active');
+			$('.article-scroll-btn').addClass('active');
 		} else {
-			$('.article-scroll').removeClass('active');
+			$('.article-scroll-btn').removeClass('active');
 		}
 	}
 	articleScroll();

@@ -537,6 +537,7 @@ input:-moz-placeholder {
 	left: 0;
 	top: 0;
 	width: 100%;
+	z-index: 1;
 }
 .article-back-block .b-block {
 	padding-top: 5px;
@@ -627,6 +628,7 @@ input:-moz-placeholder {
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
+	z-index: 2;
 }
 .popup-article .article-close:hover{
 	opacity: 1;
@@ -637,17 +639,24 @@ input:-moz-placeholder {
 	transform: rotate(180deg);*/
 }
 .popup-article .article-scroll {
-	display: block;
+	position: fixed;
+	width: 40px;
+	height: 100vh;
+	left: 0;
+	top: 0;
+}
+.popup-article .article-scroll-btn {
+	display: none;
 	width: 30px;
 	height: 30px;
 	background-image: url('../i/up-arrow.svg');
 	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: center 40%;
-	position: fixed;
+	position: absolute;
 	top: 30px;
 	left: 10px;
-	opacity: 0;
+	opacity: 0.5;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -655,12 +664,12 @@ input:-moz-placeholder {
 	border-radius: 50%;
 	background-color: rgb(190, 190, 190);
 }
-.popup-article .article-scroll.active:hover {
+.popup-article .article-scroll-btn:hover {
 	opacity: 1;
 	cursor: pointer;
 }
-.popup-article .article-scroll.active {
-	opacity: 0.5;
+.popup-article .article-scroll-btn.active {
+	display: block;
 }
 .popup-article-img {
 	display: block;
