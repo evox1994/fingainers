@@ -637,7 +637,7 @@ input:-moz-placeholder {
 	transform: rotate(180deg);*/
 }
 .popup-article .article-scroll {
-	display: none;
+	display: block;
 	width: 30px;
 	height: 30px;
 	background-image: url('../i/up-arrow.svg');
@@ -647,7 +647,7 @@ input:-moz-placeholder {
 	position: fixed;
 	top: 30px;
 	left: 10px;
-	opacity: 0.5;
+	opacity: 0;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -655,12 +655,12 @@ input:-moz-placeholder {
 	border-radius: 50%;
 	background-color: rgb(190, 190, 190);
 }
-.popup-article .article-scroll:hover {
+.popup-article .article-scroll.active:hover {
 	opacity: 1;
 	cursor: pointer;
 }
 .popup-article .article-scroll.active {
-	display: block;
+	opacity: 0.5;
 }
 .popup-article-img {
 	display: block;
