@@ -844,9 +844,13 @@
 }
 .b-7-submit .button-text a {
 	color: #ffffff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-7-submit .button-text a:hover {
-	text-decoration: underline;
+	color: rgb(190, 190, 190);
 }
 .b-7-submit .button-text .radio-btn {
 	display: block;

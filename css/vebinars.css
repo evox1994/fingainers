@@ -547,9 +547,13 @@ body {
 }
 .b-6 form .button-text a {
 	color: #ffffff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-6 form .button-text a:hover {
-	text-decoration: underline;
+	color: rgb(190, 190, 190);
 }
 .b-6 form .button-text .radio-btn {
 	display: block;

@@ -423,7 +423,7 @@ input:-moz-placeholder {
 }
 .header-nav a {
 	position: relative;
-	font-size: 16px;
+	font-size: 14px;
 	color: rgb(49, 147, 230);
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -488,7 +488,7 @@ input:-moz-placeholder {
 .footer-text p {
 	display: block;
 	max-width: 220px;
-	font-size: 14px;
+	font-size: 12px;
 	color: rgb(77, 77, 77);
 	line-height: 1.2;
 	text-align: left;
@@ -500,16 +500,21 @@ input:-moz-placeholder {
 }
 .footer-text ul li {
 	display: block;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1.2;
 	color: rgb(77, 77, 77);
 	text-align: left;
 }
 .footer-text ul li a {
 	color: rgb(77, 77, 77);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .footer-text ul li a:hover {
 	text-decoration: underline;
+	color: #000000;
 }
 
 .popup-article {
@@ -595,7 +600,7 @@ input:-moz-placeholder {
 	display: block;
 	text-align: center;
 	line-height: 1.2;
-	color: #000000;
+	color: rgb(150, 150, 150);
 	font-family: 'MuseoSansCyrl-900';
 	font-size: 30px;
 	max-width: 720px;
@@ -947,9 +952,13 @@ input:-moz-placeholder {
 }
 .popup form .button-text a {
 	color: rgb(153, 153, 153);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .popup form .button-text a:hover {
-	text-decoration: underline;
+	color: rgb(49, 147, 230);
 }
 .popup form .button-text .radio-btn {
 	display: block;
